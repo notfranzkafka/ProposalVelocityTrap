@@ -1,0 +1,18 @@
+ethereum_rpc = "https://ethereum-hoodi-rpc.publicnode.com"
+drosera_rpc = "https://relay.hoodi.drosera.io"
+eth_chain_id = 560048
+drosera_address = "0x91cB447BaFc6e0EA0F4Fe056F5a9b1F14bb06e5D"
+
+[traps]
+
+[traps.proposal_velocity]
+path = "out/ProposalVelocityTrap.sol/ProposalVelocityTrap.json"
+response_contract = "0x26561c4BBc07ECFdD7ea9C0Ae6B78C970574b1Ea"
+response_function = "respondToProposalVelocity(uint256,uint256,uint256)"
+cooldown_period_blocks = 20
+min_number_of_operators = 1
+max_number_of_operators = 3
+block_sample_size = 6
+private_trap = true
+whitelist = ["0x707496D99E6d5C95291E696aBfeEf39B5116F7EA"]
+address = "0x34bB9D3F1DDC683DFcF8DAfEB2e5D809e33d30d4"
